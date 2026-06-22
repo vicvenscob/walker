@@ -1,0 +1,11 @@
+[package]
+name = "walker"
+version = "2.16.1"
+description = "Multi-Purpose Launcher with a lot of features. Highly Customizable and fast."
+homepage = "https://walkerlauncher.com/"
+license = "Free Software Foundation"
+url = "https://github.com/vicvenscob/walker/archive/refs/heads/master.tar.gz"
+depends = []
+post_install = "cargo build --release && cp target/release/walker /usr/local/bin/walker"
+
+[package.files]
